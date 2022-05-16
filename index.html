@@ -8,44 +8,73 @@
     <title>Laboratorio de JS</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        .row {
+            margin: 20px;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="container mt-3">
-        <h3>Laboratorio en clase JavaScript parte 1</h3>
+    <div class="row">
+        <div class="col-lg-4">
+            <h3>Laboratorio en clase JavaScript</h3>
+        </div>
     </div>
 
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <hr>
+    <!--<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <div class="container-fluid">
             <ul class="navbar-nav">
                 <li class="nav-item">
                     <a class="nav-link active" href="#">Instrucciones</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Primera parte</a>
+                    <a class="nav-link" href="index.html">Primera parte</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Segunda parte</a>
                 </li>
             </ul>
         </div>
-    </nav>
+    </nav>-->
 
-    <div class="d-flex justify-content-center">
-        <input type="button" class="btn btn-outline-dark " value="Hola Mundo" onclick="saludo()">
-
-        <input type="month" class="btn btn-outline-dark" value="mes" onclick="estacion()">
-        <input type="submit" value="Ingresa el mes" class="btn btn-outline-dark">
-
-        <input type="month" class="btn btn-outline-dark" value="mes" onclick="estacion_switch()">
-        <input type="submit" value="Ingresa el mes" class="btn btn-outline-dark">
-
-        <input type="button" class="btn btn-outline-dark" value="Nombre?" onclick="">
+    <div class="row">
+        <div class="col-lg-4">
+            <input type="button" class="btn btn-outline-dark" value="Que hora es?" onclick="saludo()">
+        </div>
     </div>
 
+    <div class="row">
+        <div class="col-lg-4">
+            <select id="mes" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                <option value="1">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+              </select>
+            <input type="submit" onclick="estacion()" value="Seleccione un mes">
+            <input type="submit" onclick="estacionSwitch()" value="Funcion Switch">
+        </div>
+    </div>
 
-    <script src="script.js"></script>
+    <div class="row">
+        <div class="col-lg-4">
+            <input type="submit" onclick="salir()" value="Salir de esta pagina">
+            <div id="error"></div>
+
+        </div>
+    </div>
+    <script src="script.js "></script>
 
 </body>
 
