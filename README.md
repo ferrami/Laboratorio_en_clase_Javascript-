@@ -1,4 +1,4 @@
-# Laboratorio_en_clase_Javascript-
+# Laboratorio_en_clase_Javascript- Fernando Ramirez Lopez
 Laboratorio de JavaScript - tarea 1 
 
 1-Crear una estructura If (Anidado ) con JS donde evalue las siguientes opciones:
